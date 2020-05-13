@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Successfull signup</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+<link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+<style >
+.cardmid{
+  margin: auto;
+  background-color: #4cd3c2;
+
+
+}
+.congo{
+  font-family: 'Lobster', cursive;
+  color: #ff6363;
+
+}
+</style>
+<link href="styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container-fluid">
+    <div class="jumbotron jumbotron-fluid">
+
+    <h1 class="display-4 congo">CONGRATULATIONS.</h1>
+    <p class="lead">You have successfully Sign up.Stay in touch for more information.</p>
+  </div>
+
+
+  <div class="card col-lg-6 text-center cardmid">
+    <h5 class="card-header h3 mb-4 font-weight-bold">Check Weather here</h5>
+    <div class="card-body">
+      <form class="form-signin"action="/success.html" method="post">
+        <label>Enter city name:</label>
+        <input type="text"class="form-control top" name="cityName" placeholder="city">
+        <br>
+        <label>Temparature Type:</label>
+        <select id="unitTypeId" class="form-control bottom"name="unitType">
+          <option>Select Unit</option>
+    <option value="metric">Temperature in Celsius</option>
+    <option value="imperial"> Temperature in Fahrenheit </option>
+    <option value="">Temperature in kelvin</option>
+    </select>
+<br>
+      <button class ="btn btn-lg btn-danger"type="submit" name="submit">Search</button>
+      </form>
+      <br>
+      <form class="" action="/failure" method="post">
+        <button type="submit" class="btn btn-warning btn-outline-dark btn-lg"name="submit"><h4>Go Back</h4></button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- <div class="text-center">
+<form class="form-signin"action="/success.html" method="post">
+  <h1 class="h3 mb-4 font-weight-bold">Check Weather here</h1>
+    <label>enter city name:</label>
+    <input type="text"class="form-control top" name="cityName" placeholder="city">
+    <br>
+    <label>Temparature Type:</label>
+    <select id="unitTypeId" class="form-control bottom"name="unitType">
+      <option>Select Unit</option>
+<option value="metric">Temperature in Celsius</option>
+<option value="imperial"> Temperature in Fahrenheit </option>
+<option value="">Temperature in kelvin</option>
+</select>
+<br>
+    <button class ="btn btn-lg btn-danger"type="submit" name="submit">Search</button>
+  </form> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
